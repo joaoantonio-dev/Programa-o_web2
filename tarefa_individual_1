@@ -2,9 +2,9 @@ soma_altura_homens = 0
 qtd_homens = 0
 qtd_mulheres = 0
 
-for i in range(1, 16):
+for i in range(1, 3):
     altura = float(input("Digite a altura: "))
-    genero = input("Digite o gênero (M/F): ").strip().upper()
+    genero = input("Digite o gênero digite M se for mulher e digite H se for homem:")
     if i == 1:
         maior_altura = altura
         menor_altura = altura
@@ -15,11 +15,11 @@ for i in range(1, 16):
         if altura < menor_altura:
             menor_altura = altura
 
-    if genero == "M":
+    if genero == "H":
         soma_altura_homens = soma_altura_homens + altura
         qtd_homens = qtd_homens + 1
 
-    elif genero == "F":
+    elif genero == "M":
         qtd_mulheres = qtd_mulheres + 1
 
 
@@ -30,4 +30,5 @@ else:
 
 print("Maior altura:", format(maior_altura, ".2f"), "m")
 print("Menor altura:", format(menor_altura, ".2f"), "m")
+print("Média das alturas dos homens:", media_homens)
 print("Qtd de mulheres:", qtd_mulheres)

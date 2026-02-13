@@ -2,7 +2,7 @@ qtd_homens = 0
 qtd_mulheres = 0
 soma_altura_homens = 0
 
-for i in range(1, 16):
+for i in range(1, 3):
     altura = float(input("Digite a altura: "))
     genero = input("Digite o gênero digite M se for mulher e digite H se for homem:")
     if i == 1:
@@ -27,7 +27,7 @@ if qtd_homens > 0:
 else:
     media_homens = 0
 
-print("Maior altura:{maior_altura:..2f}")
-print("Menor altura:{menor_altura:..2f}")
-print("Média das alturas dos homens: {media_homens}")
-print("Total de mulheres: {qtd_mulheres}")
+print(f"Maior altura:{maior_altura:.2f}")
+print(f"Menor altura:{menor_altura:.2f}")
+print(f"Média das alturas dos homens: {media_homens}")
+print(f"Total de mulheres: {qtd_mulheres}")
